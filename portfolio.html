@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nebula Interactive Showcase</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">Nebula</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    
+    <!-- Portfolio Header -->
+    <header class="page-header">
+        <!-- Hero Background Image -->
+        <div class="hero-background">
+            <div class="parallax-deep hero-img"></div>
+            <div class="overlay"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-element element-1 parallax" data-speed="0.05"></div>
+            <div class="float-element element-2 parallax" data-speed="0.08"></div>
+            <div class="float-element element-3 parallax" data-speed="0.04"></div>
+        </div>
+        
+        <div class="container">
+            <h1 class="animate-text">Our <span class="accent-text">Portfolio</span></h1>
+            <p class="animate-text-delay">Explore our collection of interactive experiences and digital designs</p>
+        </div>
+    </header>
+    
+    <!-- Portfolio Filter -->
+    <div class="portfolio-filter container scroll-animate fade-up">
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="app">App UI/UX</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="interactive">Interactive</button>
+            <div class="filter-indicator"></div>
+        </div>
+        <div class="background-particle particle-1 parallax" data-speed="0.04"></div>
+    </div>
+    
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="portfolio-items">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item scroll-animate fade-up" data-category="web interactive" id="project1">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-1.jpg" alt="Cosmic Ventures Project">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Cosmic Ventures</h3>
+                                    <p>Interactive 3D brand experience</p>
+                                    <a href="#project-modal-1" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item scroll-animate fade-up delay-100" data-category="app" id="project2">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-2.jpg" alt="Stellar App Project">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Stellar App</h3>
+                                    <p>Mobile UI/UX design & development</p>
+                                    <a href="#project-modal-2" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item scroll-animate fade-up delay-200" data-category="web interactive" id="project3">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-3.jpg" alt="Nova Platform Project">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Nova Platform</h3>
+                                    <p>Web platform with advanced animations</p>
+                                    <a href="#project-modal-3" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item scroll-animate fade-up" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-4.jpg" alt="Orbital Identity Project">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Orbital Identity</h3>
+                                    <p>Brand identity and visual design system</p>
+                                    <a href="#project-modal-4" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item scroll-animate fade-up delay-100" data-category="app">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-5.jpg" alt="Pulse Finance App">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Pulse Finance</h3>
+                                    <p>Financial tracking mobile application</p>
+                                    <a href="#project-modal-5" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item scroll-animate fade-up delay-200" data-category="web interactive">
+                    <div class="portfolio-image">
+                        <div class="image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img src="assets/img/portfolio-6.jpg" alt="Eclipse Gallery Project">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Eclipse Gallery</h3>
+                                    <p>Interactive art exhibition website</p>
+                                    <a href="#project-modal-6" class="btn-text portfolio-modal-trigger magnetic-button">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hover-effect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-particle particle-2 parallax" data-speed="0.03"></div>
+        <div class="background-particle particle-3 parallax" data-speed="0.05"></div>
+    </section>
+    
+    <!-- Project Modal Templates -->
+    <div class="project-modal-container">
+        <!-- Project Modal 1 -->
+        <div id="project-modal-1" class="project-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-gallery">
+                        <div class="gallery-main">
+                            <img src="assets/img/portfolio-1-full.jpg" alt="Cosmic Ventures Main Image">
+                        </div>
+                        <div class="gallery-thumbs">
+                            <img src="assets/img/portfolio-1-thumb1.jpg" alt="Cosmic Ventures Thumbnail 1">
+                            <img src="assets/img/portfolio-1-thumb2.jpg" alt="Cosmic Ventures Thumbnail 2">
+                            <img src="assets/img/portfolio-1-thumb3.jpg" alt="Cosmic Ventures Thumbnail 3">
+                        </div>
+                    </div>
+                    <div class="modal-info">
+                        <h2>Cosmic Ventures</h2>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <h4>Client</h4>
+                                <p>Cosmic Ventures Inc.</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Services</h4>
+                                <p>UI/UX Design, Web Development, 3D Animation</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Year</h4>
+                                <p>2025</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Link</h4>
+                                <p><a href="#" target="_blank">cosmicventures.com</a></p>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Project Overview</h3>
+                            <p>Cosmic Ventures needed a website that would reflect their innovative approach to space technology. We created an immersive 3D experience that allows users to explore their products and services in an interactive environment.</p>
+                            
+                            <h3>The Challenge</h3>
+                            <p>Creating a website that would showcase complex space technology in an accessible and engaging way, while maintaining fast loading times and smooth performance across devices.</p>
+                            
+                            <h3>Our Solution</h3>
+                            <p>We developed a WebGL-powered 3D environment that allows users to interact with realistic models of spacecraft and satellites. The user interface was designed to be intuitive, with smooth animations guiding the user through the experience.</p>
+                            
+                            <h3>Results</h3>
+                            <p>The new website increased user engagement by 45%, with an average session time of over 4 minutes. The interactive elements helped Cosmic Ventures communicate complex ideas effectively, resulting in a 30% increase in qualified leads.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional modals would be defined similarly -->
+    </div>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to start your project?</h2>
+                <p>Let's create something extraordinary together</p>
+                <a href="contact.html" class="btn btn-primary magnetic-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Nebula</h2>
+                <p>Creating extraordinary digital experiences</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigate</h3>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Dribbble</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nebula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/transitions.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+</body>
+</html>

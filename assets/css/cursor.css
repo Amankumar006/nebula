@@ -1,0 +1,28 @@
+/* 
+ * Nebula - Custom Cursor CSS [DISABLED]
+ * Custom cursor has been removed and default browser cursor restored
+ */
+
+/* Reset cursor to default */
+body, 
+body:not(.touch-device),
+.magnetic-button,
+.hero *:hover, 
+.page-header *:hover,
+.floating-elements *:hover,
+.hero-background:hover,
+.hero-content:hover {
+  cursor: auto !important;
+}
+
+/* Hide custom cursor elements */
+.cursor-dot,
+.cursor-outline,
+.cursor-tracer-container,
+.cursor-tracer {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* The rest of the cursor CSS is now inactive */

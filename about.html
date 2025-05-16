@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nebula Creative Agency</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">Nebula</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    
+    <!-- About Header -->
+    <header class="page-header">
+        <!-- Hero Background Image -->
+        <div class="hero-background">
+            <div class="parallax-deep hero-img"></div>
+            <div class="overlay"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-element element-1 parallax" data-speed="0.05"></div>
+            <div class="float-element element-2 parallax" data-speed="0.08"></div>
+            <div class="float-element element-3 parallax" data-speed="0.04"></div>
+        </div>
+        
+        <div class="container">
+            <h1 class="animate-text">About <span class="accent-text">Nebula</span></h1>
+            <p class="animate-text-delay">We're a team of creative visionaries dedicated to expanding the boundaries of digital experiences</p>
+        </div>
+    </header>
+    
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content scroll-animate fade-up">
+                    <h2>Our <span class="accent-text">Story</span></h2>
+                    <p>Founded in 2020, Nebula was born from the collision of creative minds with a shared vision: to create digital experiences that inspire, engage, and transform. What started as a small team of three passionate individuals has grown into a vibrant collective of designers, developers, and strategists pushing the boundaries of what's possible in digital design.</p>
+                    <p>Our journey has been defined by continuous evolution, bold experimentation, and an unwavering commitment to excellence. We've grown alongside our clients, tackling increasingly complex challenges and expanding our capabilities to meet the ever-changing digital landscape.</p>
+                    <p>Today, we're proud to collaborate with forward-thinking brands and organizations across the globe, bringing their visions to life through thoughtful design and innovative technology.</p>
+                    <div class="story-highlight parallax" data-speed="0.02">
+                        <span class="highlight-text">From vision to reality</span>
+                    </div>
+                </div>
+                <div class="story-image scroll-animate fade-up delay-200">
+                    <div class="image-reveal">
+                        <img src="assets/img/about-story.jpg" alt="Nebula team collaborating">
+                    </div>
+                    <div class="image-decoration parallax-deep" data-speed="0.04"></div>
+                </div>
+            </div>
+        </div>
+        <div class="background-particle particle-1 parallax" data-speed="0.03"></div>
+        <div class="background-particle particle-2 parallax" data-speed="0.05"></div>
+    </section>
+    
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our <span class="accent-text">Values</span></h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+            
+            <div class="values-grid">
+                <div class="value-card scroll-animate fade-up">
+                    <div class="value-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M17,13V11H15.5V13H17M13.5,13V11H12V13H13.5M9.5,13V11H8V13H9.5M7,13H5.5V11H7V13Z" />
+                        </svg>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly explore new ideas, technologies, and approaches to create groundbreaking digital experiences that stand out in a crowded digital landscape.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <div class="value-card scroll-animate fade-up delay-200">
+                    <div class="value-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path fill="currentColor" d="M19.81,14.99L21.31,17.76C21.67,18.29 21.28,19 20.65,19H19L18.99,19C18.46,19 17.96,18.73 17.69,18.3L17,17.3C16.44,16.5 16.23,15.56 16.37,14.63C16.5,13.7 16.97,12.87 17.69,12.3L18.31,11.8C18.69,11.5 19.09,11.25 19.5,11V7A1,1 0 0,0 18.5,6A1,1 0 0,0 17.5,7V8.74C16.86,8.15 16.57,7.32 16.71,6.5C16.85,5.68 17.43,4.96 18.22,4.66C19.04,4.35 19.96,4.53 20.6,5.07C21.23,5.61 21.58,6.45 21.5,7.33V11C21.5,11.55 21.28,12.06 20.88,12.37L20.3,12.83C19.93,13.11 19.66,13.53 19.54,14C19.42,14.47 19.46,14.97 19.67,15.41L19.82,15.67C19.89,15.8 19.93,15.93 20,16.07V16.07C20.56,17.37 21.81,15.91 21.06,14.77L19.81,14.99M15.71,15.72L15.55,15.55C14.87,14.85 13.83,14.5 12.77,14.58C11.71,14.66 10.73,15.15 10.14,15.97L9.43,16.95C9.03,17.47 8.27,17.61 7.7,17.29C7.13,16.96 6.97,16.21 7.31,15.63L7.57,15.24C8.44,13.94 9.89,13.13 11.5,13.08C11.83,13.07 12.16,13.09 12.5,13.14L12.89,13.2C13.38,13.29 13.88,13.11 14.19,12.71C14.5,12.31 14.53,11.76 14.26,11.33L13.83,10.6C13.41,9.9 12.88,9.67 11.96,9.62L8.46,9.57C7.04,9.54 5.7,8.88 4.77,7.83L4,6.83C3.15,5.74 3.53,4.11 4.83,3.5L6.33,2.5L10.13,5.33L11.04,6.04L12.5,7.5L12.67,8.72L14.91,10.25C16.84,8.71 17.34,6.21 16.25,4.17L16.25,4.17C15.22,2.27 12.87,1.47 10.97,2.5C9.06,3.53 8.26,5.88 9.29,7.79L9.55,8.29L6.11,7.97C5.77,7.94 5.44,8.07 5.21,8.32L4.25,9.38C3.56,10.13 3.47,11.28 4.03,12.12L4.58,12.92C5.16,13.77 6.06,14.32 7.04,14.43L9.37,14.7C10.12,14.77 10.65,15.47 10.58,16.23C10.5,16.98 9.8,17.5 9.05,17.43L7.05,17.29C7.03,18 7.28,18.67 7.74,19.21L8.15,19.69C9.47,21.27 12.08,21.5 13.71,20.19L13.81,20.11C15.72,18.59 15.94,15.79 14.31,13.97L15.71,15.72Z" />
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>We believe great ideas flourish through open communication and teamwork. We partner closely with our clients and each other to achieve extraordinary results.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <div class="value-card scroll-animate fade-up delay-400">
+                    <div class="value-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path fill="currentColor" d="M21.71 20.29L20.29 21.71A1 1 0 0 1 18.88 21.71L7 9.85A3.81 3.81 0 0 1 6 10A4 4 0 0 1 2.22 4.7L4.76 7.24L5.29 6.71L6.71 5.29L7.24 4.76L4.7 2.22A4 4 0 0 1 10 6A3.81 3.81 0 0 1 9.85 7L21.71 18.88A1 1 0 0 1 21.71 20.29M2.29 18.88A1 1 0 0 0 2.29 20.29L3.71 21.71A1 1 0 0 0 5.12 21.71L10.59 16.25L7.76 13.42M20 2L16 4V6L13.83 8.17L15.83 10.17L18 8H20L22 4Z" />
+                        </svg>
+                    </div>
+                    <h3>Craftsmanship</h3>
+                    <p>We approach every project with meticulous attention to detail, taking pride in creating polished, thoughtfully constructed digital experiences that exceed expectations.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <div class="value-card scroll-animate fade-up delay-600">
+                    <div class="value-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" width="48" height="48">
+                            <path fill="currentColor" d="M12,5.37L11.56,5.31L6,14.9C6.24,15.11 6.4,15.38 6.47,15.68H17.53C17.6,15.38 17.76,15.11 18,14.9L12.44,5.31L12,5.37M6.6,16.53L10.88,19.06C11.17,18.79 11.57,18.63 12,18.63C12.43,18.63 12.83,18.79 13.12,19.06L17.4,16.53H6.6M12,22A1.68,1.68 0 0,1 10.32,20.32L10.41,19.76L6.11,17.21C5.8,17.57 5.35,17.79 4.84,17.79A1.68,1.68 0 0,1 3.16,16.11C3.16,15.32 3.69,14.66 4.42,14.47V9.36C3.69,9.18 3.16,8.5 3.16,7.74A1.68,1.68 0 0,1 4.84,6.05C5.35,6.05 5.8,6.27 6.11,6.63L10.41,4.08L10.32,3.5C10.32,2.53 11.07,1.74 12,1.74C12.93,1.74 13.68,2.53 13.68,3.5L13.59,4.08L17.89,6.63C18.2,6.27 18.65,6.05 19.16,6.05A1.68,1.68 0 0,1 20.84,7.74C20.84,8.5 20.31,9.18 19.58,9.36V14.47C20.31,14.66 20.84,15.32 20.84,16.11A1.68,1.68 0 0,1 19.16,17.79C18.65,17.79 18.2,17.57 17.89,17.21L13.59,19.76L13.68,20.32A1.68,1.68 0 0,1 12,22M9.5,10L12,13.5L14.5,10L12,6.5L9.5,10Z" />
+                        </svg>
+                    </div>
+                    <h3>Adaptability</h3>
+                    <p>In a rapidly evolving digital landscape, we embrace change and continuously evolve our skills and approaches to deliver cutting-edge solutions.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+        <div class="background-particle particle-3 parallax" data-speed="0.06"></div>
+        <div class="background-particle particle-4 parallax" data-speed="0.04"></div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet the <span class="accent-text">Team</span></h2>
+            <p class="section-subtitle">The creative minds behind Nebula</p>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member scroll-animate fade-up">
+                    <div class="member-image">
+                        <img src="assets/img/team-1.jpg" alt="Alex Foster - Creative Director">
+                        <div class="member-social">
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="member-hover-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Foster</h3>
+                        <p class="member-role">Creative Director</p>
+                        <p class="member-bio">With over 15 years of experience in digital design, Alex leads our creative vision with a passion for pushing boundaries and challenging conventions.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member scroll-animate fade-up delay-200">
+                    <div class="member-image">
+                        <img src="assets/img/team-2.jpg" alt="Maya Chen - UX Director">
+                        <div class="member-social">
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="member-hover-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Maya Chen</h3>
+                        <p class="member-role">UX Director</p>
+                        <p class="member-bio">Maya combines design thinking with deep user research to create intuitive, engaging digital experiences that put users at the center.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-member scroll-animate fade-up delay-400">
+                    <div class="member-image">
+                        <img src="assets/img/team-3.jpg" alt="Marcus Johnson - Technical Director">
+                        <div class="member-social">
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="member-hover-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Marcus Johnson</h3>
+                        <p class="member-role">Technical Director</p>
+                        <p class="member-bio">Marcus brings over a decade of development expertise, guiding our technical approach to create robust, scalable digital solutions.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-member scroll-animate fade-up delay-600">
+                    <div class="member-image">
+                        <img src="assets/img/team-4.jpg" alt="Sophia Rodriguez - Strategy Lead">
+                        <div class="member-social">
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link magnetic-button" target="_blank">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="member-hover-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sophia Rodriguez</h3>
+                        <p class="member-role">Strategy Lead</p>
+                        <p class="member-bio">Sophia transforms business goals into effective digital strategies, helping clients navigate complex challenges and identify new opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-particle particle-5 parallax" data-speed="0.03"></div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box animate-on-scroll">
+                    <div class="stat-number" data-count="300">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                
+                <div class="stat-box animate-on-scroll">
+                    <div class="stat-number" data-count="112">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                
+                <div class="stat-box animate-on-scroll">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                
+                <div class="stat-box animate-on-scroll">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Trusted <span class="accent-text">Partners</span></h2>
+            <p class="section-subtitle">Brands we've collaborated with</p>
+            
+            <div class="partner-logos">
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-1.png" alt="Partner Logo">
+                </div>
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-2.png" alt="Partner Logo">
+                </div>
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-3.png" alt="Partner Logo">
+                </div>
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-4.png" alt="Partner Logo">
+                </div>
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-5.png" alt="Partner Logo">
+                </div>
+                <div class="partner-logo animate-on-scroll">
+                    <img src="assets/img/partner-6.png" alt="Partner Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to work with us?</h2>
+                <p>Let's create something extraordinary together</p>
+                <a href="contact.html" class="btn btn-primary magnetic-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Nebula</h2>
+                <p>Creating extraordinary digital experiences</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigate</h3>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Dribbble</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nebula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/transitions.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>
